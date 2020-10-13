@@ -1,24 +1,8 @@
-# reblazerss
+# vuejs-rss-feed
+A simple RSS feed using Vue.JS
 
 ## Project setup
-```
-npm install
-```
+From the main directory: Run `npm install` to install all the needed modules.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Running the app
+Run `npm run serve` and navigate to http://localhost:8080/.
