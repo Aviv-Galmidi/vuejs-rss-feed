@@ -43,6 +43,11 @@
             async fetchData() {
                 this.loading = true;
                 this.feed = [];
+                if (!this.feedUrl) {
+                    console.log('Empty feed url given, please try again');
+                    this.loading = false;
+                    return;
+                }
                 try {
                     const urlWithCorsAnywhere = `https://cors-anywhere.herokuapp.com/${this.feedUrl}`;
                     const data = await fetch(urlWithCorsAnywhere);

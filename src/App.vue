@@ -1,9 +1,9 @@
 <template>
-    <div class="tile is-ancestor">
-        <div class="tile is-2">
+    <div class="columns">
+        <div class="column is-one-quarter no-padding">
             <SubscriptionList @change-active-subscription="setActiveSubscription"></SubscriptionList>
         </div>
-        <div class="tile">
+        <div class="column no-padding">
             <ArticleList :feedUrl="feedUrl"/>
         </div>
     </div>
@@ -40,6 +40,10 @@
         text-align: left;
         padding: 8px;
         color: #2c3e50;
+    }
+
+    .column.no-padding {
+        padding: 0;
     }
 
     .ellipsis {
